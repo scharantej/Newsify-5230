@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recent News Articles</title>
+</head>
+<body>
+<h1>Recent News Articles</h1>
+<ul id="news-articles">
+{% for news_article in news_articles %}
+<li>
+<h2>{{ news_article.title }}</h2>
+<p>{{ news_article.description }}</p>
+<a href="{{ news_article.url }}">Read more</a>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
